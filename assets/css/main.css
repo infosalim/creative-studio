@@ -1,0 +1,924 @@
+/* ==========================================================================
+   CSS Styles
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900|Raleway:300,400,600,700,800');
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Maven Pro', sans-serif;
+    color: #555;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: 58px;
+}
+
+a {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+p {
+    color: #999999;
+    line-height: 26px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.padding-bottom-80 {
+    padding-bottom: 80px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/* ==========================================================================
+   Header area css
+   ========================================================================== */
+
+header.header-area {
+    position: fixed;
+    background: rgba(0, 0, 0, .3);
+    padding: 40px 0;
+    width: 100%;
+    z-index: 999;
+}
+
+section.team-area p {
+    padding: 0 40px 0 0;
+}
+
+header.header-area ul {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 12px;
+}
+
+header.header-area li {
+    position: relative;
+    display: inline-block;
+}
+
+header.header-area li a {
+    color: #fff;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.active-menu {
+    color: #000 !important;
+}
+
+header.header-area li a:hover {
+    text-decoration: none;
+    color: #000;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+header.header-area input[type="search"] {
+    position: absolute;
+    right: 4%;
+    bottom: -160%;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    padding: 6px;
+}
+
+header.header-area input[type="search"]::placeholder {
+    color: #fff;
+}
+
+#search {
+    display: none;
+}
+
+/* ==========================================================================
+   Banner area
+   ========================================================================== */
+
+section.banner-area {
+    position: relative;
+    background: #3387ff;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3395ff+0,3361ff+100 */
+    background: #3395ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #3395ff 0%, #3361ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3395ff 0%, #3361ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3395ff 0%, #3361ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3395ff', endColorstr='#3361ff', GradientType=1);
+    /* IE6-9 */
+}
+
+.banner-bg-img {
+    position: relative;
+    height: 100%;
+    background-image: url("../img/background/banner-bg.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.banner-item {
+    position: relative;
+    height: 100%;
+}
+
+.item-table {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.banner-item h1 {
+    font-size: 60px;
+    color: #fff;
+    line-height: 70px;
+    padding: 60px 0;
+}
+
+.banner-item h1:after {
+    height: 3px;
+    width: 165px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    background: #fff;
+    content: '';
+}
+
+.banner-item p {
+    color: #fff;
+}
+
+a.banner-btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 40px 25px 0 0;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+a.banner-btn:hover {
+    text-decoration: none;
+    background: #fff;
+    color: #555;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+
+.carouse,
+.carousel-inner,
+.carousel-item,
+.carousel {
+    height: 100%;
+}
+
+.carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* ==========================================================================
+  business area
+   ========================================================================== */
+
+section.business-app-area img {
+    width: 85%;
+}
+.responsive-mode{
+    display: none;
+}
+a.business-btn {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3399ff+0,3366ff+100 */
+    background: #3399ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #3399ff 0%, #3366ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3399ff 0%, #3366ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3399ff 0%, #3366ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3399ff', endColorstr='#3366ff', GradientType=1);
+    /* IE6-9 */
+    padding: 14px 36px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+a.business-btn:hover {
+    text-decoration: none;
+    box-shadow: 2px 4px 14px -2px #000;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+
+/* ==========================================================================
+   Quote section
+   ========================================================================== */
+
+section.free-quote {
+    background-image: url("../img/background/quote-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+section.free-quote:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #337cff;
+    content: '';
+    opacity: .8;
+    z-index: -1;
+}
+
+section.free-quote h1:after {
+    display: none;
+}
+
+section.free-quote h1 {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+section.free-quote p {
+    color: #fff;
+}
+
+a.quote-btn {
+    display: inline-block;
+    color: #6d6d6d;
+    text-transform: capitalize;
+    font-weight: 700;
+    background: #fff;
+    padding: 16px 45px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+a.quote-btn:hover {
+    color: #2d89ff;
+    text-decoration: none;
+    box-shadow: 2px 4px 14px -2px #000;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+/* ==========================================================================
+   portfolio area
+   ========================================================================== */
+
+section.portfolio-area {
+    position: relative;
+}
+
+section.portfolio-area h1:after {
+    top: 20%;
+}
+
+section.portfolio-area ul {
+    text-transform: uppercase;
+}
+
+section.portfolio-area li {
+    display: inline-block;
+    padding: 50px 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+section.portfolio-area li:hover {
+    color: #3088ff;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+.portfolio-img img {
+    position: relative;
+    max-width: 100%;
+    z-index: -2;
+}
+
+.portfolio-img {
+    position: relative;
+    margin-bottom: 28px;
+    z-index: 1;
+}
+
+.portfolio-img:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.portfolio-img:hover::after {
+    visibility: visible;
+    opacity: .5;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+.over-content {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 5%;
+    top: 5%;
+    margin-top: -40px;
+    margin-left: -75px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.portfolio-img:hover .over-content {
+    left: 50%;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+.portfolio-img img:hover .over-content {
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.over-content h6 {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.over-content p {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.active-btn {
+    color: #3088ff;
+}
+
+.mix a {
+    outline: none;
+}
+
+/* ==========================================================================
+   featured product area
+   ========================================================================== */
+
+section.great-product {
+    position: relative;
+    background: #fafafa;
+}
+
+.product-detail img {
+    position: relative;
+    float: left;
+    padding-top: 3px;
+}
+
+.detail-text {
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+.padding-bottom-no{
+    padding-bottom: 0;
+}
+.product-detail {
+    position: relative;
+}
+
+section.great-product .col-lg-4,
+section.great-product .col-lg-3 {
+    padding-top: 70px;
+}
+
+.great-product-img {
+    padding-top: 100px;
+}
+
+/* ==========================================================================
+   team area
+   ========================================================================== */
+
+section.team-area h1:after {
+    top: 36%;
+}
+
+section.team-area h1 {
+    padding-right: 120px;
+}
+
+.team-member {
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+section.team-area .col-lg-6 {
+    padding-top: 120px;
+}
+
+.teacher-img {
+    position: relative;
+    z-index: -1;
+    margin: 20px 0;
+}
+
+.team-member img {
+    max-width: 100%;
+    z-index: -1;
+}
+
+.teacher-img:after {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 0;
+    left: 0;
+    background: #000;
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.team-member:hover .teacher-img:after {
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    opacity: .4;
+    -webkit-transition: ease-in .3s;
+    -o-transition: ease-in .3s;
+    transition: ease-in .3s;
+}
+
+.social-icons {
+    position: absolute;
+    background: #3369ff;
+    top: 10%;
+    left: 30%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team-member:hover .social-icons {
+    top: 67.3%;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: ease-in .3s;
+    -o-transition: ease-in .3s;
+    transition: ease-in .3s;
+}
+
+.social-icons ul {
+    position: relative;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li:hover {
+    background: #000;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+.social-icons a .fa-facebook-f,
+.social-icons a .fa-twitter,
+.social-icons a .fa-linkedin-in {
+    color: #fff;
+    margin: 10px
+}
+
+/* ==========================================================================
+   blog area
+   ========================================================================== */
+
+section.latest-blog {
+    background: #fafafa;
+}
+
+.single-blog {
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 0 0 16px -5px #000;
+    padding: 40px 10px 40px 55%;
+}
+
+.single-blog:after {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background: #ddd;
+    content: '';
+    border-radius: 0 50% 50% 0;
+}
+
+.single-blog h4 {
+    color: #555;
+}
+
+.single-blog p {
+    padding: 10px 0;
+}
+
+a.read-more {
+    text-transform: capitalize;
+    color: #555;
+    font-weight: 700;
+}
+
+a.read-more:hover {
+    color: #3088ff;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+
+
+/* ==========================================================================
+   client area
+   ========================================================================== */
+
+.carousel-cell {
+    width: 33%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 30px;
+    opacity: .3;
+}
+
+.carousel-cell.is-selected {
+    opacity: 1;
+}
+
+.carousel-cell .fa-quote-left,
+.carousel-cell .fa-quote-right {
+    display: none;
+}
+
+.carousel-cell.is-selected .fa-quote-left,
+.carousel-cell.is-selected .fa-quote-right {
+    display: inline-block;
+}
+
+.slider-content {
+    position: relative;
+    padding: 40px 20px;
+}
+
+.slider-content img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #3088ff;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    color: #3088ff;
+    margin: 0 10px;
+}
+
+.slider-content h4 {
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.slider-content h6 {
+    color: #3088ff;
+}
+
+.slider-content .text-center {
+    padding-bottom: 30px;
+}
+
+.carousel-cell.is-selected .slider-content {
+    box-shadow: 0 1px 3px -1px #000;
+}
+
+/* ==========================================================================
+   contact area
+   ========================================================================== */
+
+section.contact-area {
+    position: relative;
+    background-image: url("../img/background/contact-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+section.contact-area:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #3088ff;
+    content: '';
+    opacity: .8;
+    z-index: -1;
+}
+
+section.contact-area h1:after {
+    display: none;
+}
+
+section.contact-area h1 {
+    color: #fff;
+}
+
+section.contact-area input[type="text"],
+section.contact-area input[type="email"] {
+    float: left;
+    left: 0;
+    width: 48%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    padding: 6px 0;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+section.contact-area input[type="text"] {
+    margin-right: 20px;
+}
+
+section.contact-area input#subject {
+    width: 100%;
+}
+
+section.contact-area .contact-form textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    resize: none;
+    margin-bottom: 30px;
+    outline: none;
+    color: #fff;
+}
+
+section.contact-area input[type="submit"] {
+    border: 1px solid #fff;
+    background: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 50px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+}
+
+section.contact-area input[type="text"]::placeholder,
+section.contact-area input[type="email"]::placeholder,
+section.contact-area textarea::placeholder {
+    text-transform: capitalize;
+    color: #fff;
+}
+
+section.contact-area input[type="text"]::-ms-input-placeholder {
+    color: #fff;
+}
+
+section.contact-area input[type="email"]::-ms-input-placeholder {
+    color: #fff
+}
+
+section.contact-area textarea::-ms-input-placeholder {
+    color: #fff;
+}
+
+section.contact-area input[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+section.footer-top {
+    position: relative;
+}
+
+section.footer-top h5 {
+    color: #3088ff;
+    padding-bottom: 35px;
+}
+
+section.footer-top ul {
+    text-transform: capitalize;
+    position: relative;
+    font-size: 14px;
+}
+
+section.footer-top li {
+    display: block;
+    padding: 5px 0;
+}
+
+section.footer-top li a {
+    color: #797979;
+}
+
+section.footer-top li a:hover {
+    text-decoration: none;
+    color: #2d89ff;
+}
+
+.footer-top input[type="email"] {
+    border: 1px solid #3088ff;
+    border-right: none;
+    margin-bottom: 30px;
+    padding: 15px;
+    outline: none;
+}
+
+.footer-top button {
+    background: #3088ff;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 16px;
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+}
+
+.footer-top button:hover {
+    box-shadow: 2px 4px 14px -2px #000;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+}
+
+section.footer-top span {
+    color: #2d89ff;
+}
+
+ul#footer-social-icons {
+    position: relative;
+}
+
+ul#footer-social-icons li {
+    display: inline-block;
+}
+
+ul#footer-social-icons li a {
+    padding: 20px 10px 0 0;
+    color: #555;
+}
+
+ul#footer-social-icons li a:hover {
+    color: #3088ff;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+/* ==========================================================================
+   copyright
+   ========================================================================== */
+
+section.copyright {
+    background: #000;
+    padding: 40px;
+}
+
+section.copyright h5 {
+    color: #fff;
+    margin: 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
